@@ -1,0 +1,94 @@
+{
+  "taxes": {
+    "medicare": {
+      "rate": {
+        "single": [
+          [0, 0.0145],
+          [200000, 0.0235]
+        ],
+        "married": [
+          [0, 0.0145],
+          [250000, 0.0235]
+        ]
+      },
+      "source": {
+        "name": "Social Security Administration - 2015 Social Security Changes",
+        "url": "//www.ssa.gov/news/press/factsheets/colafacts2015.html"
+      }
+    },
+    "socialSecurity": {
+      "rate": [
+        [0, 0.062],
+        [118500, 0]
+      ],
+      "source": {
+        "name": "Social Security Administration - 2015 Social Security Changes",
+        "url": "//www.ssa.gov/news/press/factsheets/colafacts2015.html"
+      }
+    },
+    "federalIncome": {
+      "rate": {
+        "single": [
+          [0, 0.1],
+          [9225, 0.15],
+          [37450, 0.25],
+          [90750, 0.28],
+          [189300, 0.33],
+          [411500, 0.35],
+          [413200, 0.396]
+        ],
+        "married": [
+          [0, 0.1],
+          [18450, 0.15],
+          [74900, 0.25],
+          [151200, 0.28],
+          [230450, 0.33],
+          [411500, 0.35],
+          [464850, 0.396]
+        ]
+      },
+      "deductions": {
+        "standardDeduction": {
+          "amount": {
+            "single": 6300,
+            "married": 12600
+          }
+        },
+        "personalExemption": {
+          "amount": 4000
+        },
+        "dependents": {
+          "amount": 4000
+        }
+      },
+      "credits": {
+        "retirementSavers": {
+          "rate": {
+            "single": [
+              [0, 0.5],
+              [18251, 0.2],
+              [19751, 0.1],
+              [30501, 0]
+            ],
+            "married": [
+              [0, 0.5],
+              [36501, 0.2],
+              [39501, 0.1],
+              [61001, 0]
+            ]
+          },
+          "maximum": 2000,
+          "isRefundable": false,
+          "source": {
+            "name": "Retirement Savings Contributions Savers Credit | Internal Revenue Service",
+            "url": "//www.irs.gov/retirement-plans/plan-participant-employee/retirement-savings-contributions-savers-credit"
+          }
+        }
+      },
+      "source": {
+        "name": "Tax Foundation - 2015 Tax Brackets",
+        "url": "//taxfoundation.org/article/2015-tax-brackets"
+      }
+    }
+  }
+}

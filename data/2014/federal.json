@@ -1,0 +1,92 @@
+{
+  "taxes": {
+    "medicare": {
+      "rate": {
+        "single": [
+          [0, 0.0145],
+          [200000, 0.0235]
+        ],
+        "married": [
+          [0, 0.0145],
+          [250000, 0.0235]
+        ]
+      },
+      "source": {
+        "name": "Questions and Answers for the Additional Medicare Tax",
+        "url": "//www.irs.gov/Businesses/Small-Businesses-&-Self-Employed/Questions-and-Answers-for-the-Additional-Medicare-Tax"
+      }
+    },
+    "socialSecurity": {
+      "rate": [
+        [0, 0.062],
+        [117000, 0]
+      ],
+      "source": {
+        "name": "IRS Publication 15, Employer's Tax Guide - Page 1",
+        "url": "//www.irs.gov/pub/irs-pdf/p15.pdf"
+      }
+    },
+    "federalIncome": {
+      "rate": {
+        "single": [
+          [0, 0.1],
+          [9075, 0.15],
+          [36900, 0.25],
+          [89350, 0.28],
+          [186350, 0.33],
+          [405100, 0.35],
+          [406750, 0.396]
+        ],
+        "married": [
+          [0, 0.1],
+          [18150, 0.15],
+          [73800, 0.25],
+          [148850, 0.28],
+          [226850, 0.33],
+          [405100, 0.35],
+          [457600, 0.396]
+        ]
+      },
+      "deductions": {
+        "standardDeduction": {
+          "amount": {
+            "single": 6200,
+            "married": 12400
+          }
+        },
+        "personalExemption": {
+          "amount": 3950
+        },
+        "dependents": {
+          "amount": 3950
+        }
+      },
+      "retirementSavers": {
+        "rate": {
+          "single": [
+            [0, 0.5],
+            [18001, 0.2],
+            [19501, 0.1],
+            [30001, 0]
+          ],
+          "married": [
+            [0, 0.5],
+            [36001, 0.2],
+            [39001, 0.1],
+            [60001, 0]
+          ]
+        },
+        "maximum": 2000,
+        "isRefundable": false,
+        "source": {
+          "name": "Retirement Savings Contributions Savers Credit | Internal Revenue Service",
+          "url": "//www.irs.gov/retirement-plans/plan-participant-employee/retirement-savings-contributions-savers-credit"
+        }
+      },
+      "source": {
+        "name": "Tax Foundation - The 2014 Tax Brackets",
+        "url": "//taxfoundation.org/article/2014-tax-brackets"
+      }
+    }
+  }
+}

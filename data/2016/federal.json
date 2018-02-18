@@ -1,0 +1,94 @@
+{
+  "taxes": {
+    "medicare": {
+      "rate": {
+        "single": [
+          [0, 0.0145],
+          [200000, 0.0235]
+        ],
+        "married": [
+          [0, 0.0145],
+          [250000, 0.0235]
+        ]
+      },
+      "source": {
+        "name": "Social Security Press Office: 2016 Social Security Changes",
+        "url": "//www.ssa.gov/news/press/factsheets/colafacts2016.html"
+      }
+    },
+    "socialSecurity": {
+      "rate": [
+        [0, 0.062],
+        [118500, 0]
+      ],
+      "source": {
+        "name": "Social Security Press Office: 2016 Social Security Changes",
+        "url": "//www.ssa.gov/news/press/factsheets/colafacts2016.html"
+      }
+    },
+    "federalIncome": {
+      "rate": {
+        "single": [
+          [0, 0.1],
+          [9275, 0.15],
+          [37650, 0.25],
+          [91150, 0.28],
+          [190150, 0.33],
+          [413350, 0.35],
+          [415050, 0.396]
+        ],
+        "married": [
+          [0, 0.1],
+          [18550, 0.15],
+          [75300, 0.25],
+          [151900, 0.28],
+          [231450, 0.33],
+          [413350, 0.35],
+          [466950, 0.396]
+        ]
+      },
+      "deductions": {
+        "standardDeduction": {
+          "amount": {
+            "single": 6300,
+            "married": 12600
+          }
+        },
+        "personalExemption": {
+          "amount": 4050
+        },
+        "dependents": {
+          "amount": 4050
+        }
+      },
+      "credits": {
+        "retirementSavers": {
+          "rate": {
+            "single": [
+              [0, 0.5],
+              [18501, 0.2],
+              [20001, 0.1],
+              [30751, 0]
+            ],
+            "married": [
+              [0, 0.5],
+              [37001, 0.2],
+              [40001, 0.1],
+              [61501, 0]
+            ]
+          },
+          "maximum": 2000,
+          "isRefundable": false,
+          "source": {
+            "name": "Retirement Savings Contributions Savers Credit | Internal Revenue Service",
+            "url": "//www.irs.gov/retirement-plans/plan-participant-employee/retirement-savings-contributions-savers-credit"
+          }
+        }
+      },
+      "source": {
+        "name": "Tax Brackets in 2016 - Tax Foundation",
+        "url": "//taxfoundation.org/2016-tax-brackets/"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "taxes": {
+    "income": {
+      "rate": 0.05,
+      "deductions": {
+        "personalExemption": {
+          "amount": 2850
+        },
+        "dependents": {
+          "amount": 2850
+        }
+      },
+      "source": {
+        "name": "Tax Foundation - State Individual Income Tax Rates",
+        "url": "//taxfoundation.org/article/state-individual-income-tax-rates"
+      }
+    }
+  }
+}

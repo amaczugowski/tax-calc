@@ -1,0 +1,17 @@
+{
+  "taxes": {
+    "income": {
+      "rate": 0.0425,
+      "useFederalAGI": true,
+      "deductions": {
+        "personalExemption": {
+          "amount": 3950
+        }
+      },
+      "source": {
+        "name": "Tax Foundation - State Individual Income Tax Rates",
+        "url": "//taxfoundation.org/article/state-individual-income-tax-rates"
+      }
+    }
+  }
+}

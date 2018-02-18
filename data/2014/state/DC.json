@@ -1,0 +1,30 @@
+{
+  "taxes": {
+    "income": {
+      "rate": [
+        [0, 0.04],
+        [10000, 0.06],
+        [40000, 0.085],
+        [350000, 0.0895]
+      ],
+      "deductions": {
+        "standardDeduction": {
+          "amount": {
+            "single": 2000,
+            "married": 4000
+          }
+        },
+        "personalExemption": {
+          "amount": 1675
+        },
+        "dependents": {
+          "amount": 1675
+        }
+      },
+      "source": {
+        "name": "Tax Foundation - State Individual Income Tax Rates",
+        "url": "//taxfoundation.org/article/state-individual-income-tax-rates"
+      }
+    }
+  }
+}
