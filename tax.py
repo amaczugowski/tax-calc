@@ -45,14 +45,12 @@ def calc_fed_tax(income, marital_status, dependents):
             brackets = federal_taxes['taxes'][category]['rate'][marital_status]
         else:
             brackets = federal_taxes['taxes'][category]['rate']
-        print(bracket_percentage(income, brackets))
         total += bracket_percentage(income, brackets)
     deductions = federal_taxes['taxes']['federalIncome']['deductions']
     std_deduct = deductions['standardDeduction']['amount'][marital_status]
     per_exempt = deductions['personalExemption']['amount']
     dep_exempt = deductions['dependents']['amount'] * dependents
     taxable_income = income - per_exempt - dep_exempt - std_deduct
-    print(taxable_income, total)
     return max(0, total * taxable_income), \
            std_deduct + per_exempt + dep_exempt, \
            per_exempt + dep_exempt
@@ -111,6 +109,3 @@ def calc_tax_info(us_state, income, marital_status='single', dependents=0):
     state_tax = calc_state_tax(us_state, income, deductions, exemptions,
                                marital_status, dependents)
     return TaxInfo(federal_tax, state_tax)
-
-
-print(calc_tax_info('CA', 100000))
